@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  min-height: 100%;
+  font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 0.7rem;
+  background-image: url("./bg1.jpeg");
+  background-size: cover;
+  margin: auto;
+}
+
+header {
+  width: 90%;
+  padding: 0.5em;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(252, 175, 2);
+}
+
+main {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto;
+  border: 3px solid goldenrod;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+
+}
+
+footer {
+  width: 90%;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  margin-bottom: 0.35rem;
+  color: goldenrod;
+  font-size: 25px;
+  font-style: italic;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+  padding: 0 0.25rem 0.25rem;
+}
+
+ul li::before {
+  content: "\200B";
+}
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0.5rem 0.5rem 0.8rem;
+  margin: 0.4rem 0;
+  background-color: goldenrod;
+  border-radius: 1rem;
+}
+
+.item:first-child {
+  margin: 1;
+}
+
+.item input[type="checkbox"] {
+  text-align: center;
+  width: 2.5rem;
+  width: 30px;
+  min-width: 30px;
+  height: 2.5rem;
+  height: 30px;
+  min-height: 30px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  accent-color: rgb(28, 36, 59);
+}
+
+.item input[type="checkbox"]:focus+label {
+  text-decoration: underline;
+}
+
+.item>label {
+  font-size: 1rem;
+  flex-grow: 1;
+  color: rgb(28, 36, 59);
+}
+
+.item svg {
+  width: 48px;
+  min-width: 48px;
+  height: 36px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.item svg:focus,
+.item svg:hover {
+  color: rgb(28, 36, 59);
+  outline: none;
+}
+
+.addForm {
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+}
+
+.addForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.addForm input[type='text'] {
+  flex-grow: 1;
+  max-width: calc(100% - 50px);
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 3px solid goldenrod;
+  border-radius: 0.35rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+
+button {
+  height: 48px;
+  min-width: 48px;
+  border-radius: 0.5rem;
+  border-color: rgb(28, 36, 59);
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: rgb(28, 36, 59);
+  color: white;
+  cursor: pointer;
+}
+
+button:focus,
+button:hover {
+  color: rgb(252, 175, 2);
+  background-color: rgb(28, 36, 59);
+  border-color: rgb(252, 175, 2);
+  outline: none;
+}
+
+.searchForm {
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.25rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+}
+
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.searchForm input[type='text'] {
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 3px solid goldenrod;
+  border-radius: 0.35rem;
+  outline: none;
+  position: relative;
+}
